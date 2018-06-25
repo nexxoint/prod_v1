@@ -1,0 +1,110 @@
+body {
+  background-size: cover;
+  min-height: 100vh;
+  background: url("../images/background.jpg") #051433 center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 30px; }
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+p {
+  font-size: 0.8rem; }
+
+.globe {
+  background-size: auto 90%;
+  min-height: 100vh;
+  background: url("../images/globe.png") center center no-repeat;
+  -webkit-background-size: auto 90%;
+  -moz-background-size: auto 90%;
+  -o-background-size: auto 90%;
+  padding-bottom: 3rem; }
+
+.logo {
+  width: 120px; }
+
+.inline-list {
+  list-style-type: none; }
+  .inline-list li {
+    display: inline-block;
+    padding-left: 10px; }
+
+.countdown {
+  padding-top: 50px;
+  margin-bottom: 30px; }
+  .countdown ul {
+    list-style-type: none;
+    padding: 0; }
+    .countdown ul li {
+      border: solid 1px #ffffff;
+      display: inline-block;
+      text-align: center;
+      font-weight: 300;
+      padding: 10px 15px; }
+    .countdown ul span.digit {
+      font-size: 3rem;
+      line-height: 2.8rem; }
+    .countdown ul span.unit {
+      font-size: 0.7rem;
+      font-family: Helvetica, Arial, sans-serif; }
+
+#signup-form .input-group {
+  width: 60%;
+  margin: 0 auto; }
+#signup-form .form-control {
+  border-radius: 1rem;
+  color: #000000;
+  font-size: 0.8rem; }
+#signup-form .form-control:focus {
+  border-color: #ffffff;
+  box-shadow: none; }
+#signup-form .btn {
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  padding: .375rem 1.75rem; }
+#signup-form .btn-outline-secondary {
+  background-color: #31a6c1;
+  color: #ffffff;
+  border-color: #31a6c1; }
+#signup-form .message {
+  font-size: 0.8rem;
+  margin-bottom: 5px; }
+#signup-form .message.success {
+  color: greenyellow; }
+#signup-form .message.error {
+  color: firebrick; }
+#signup-form .btn:focus, #signup-form .btn-outline-secondary:focus {
+  box-shadow: none; }
+#signup-form .input-group-append {
+  margin-left: -25px; }
+#signup-form .input-group > .input-group-append > .btn, #signup-form .input-group > .input-group-append > .input-group-text, #signup-form .input-group > .input-group-prepend:first-child > .btn:not(:first-child), #signup-form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child), #signup-form .input-group > .input-group-prepend:not(:first-child) > .btn, #signup-form .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+  border-radius: 1rem; }
+#signup-form .input-group > .custom-file:focus, #signup-form .input-group > .custom-select:focus, #signup-form .input-group > .form-control:focus {
+  z-index: 1; }
+
+@media (max-width: 576px) {
+  .col-xs-3 {
+    width: 25%; }
+
+  .col-xs-9 {
+    width: 75%; }
+
+  .displaySection {
+    padding: 10px 10px; }
+
+  .numberDisplay {
+    font-size: 2.5rem; } }
+
+/*# sourceMappingURL=style.css.map */

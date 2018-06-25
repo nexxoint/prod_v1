@@ -1,0 +1,81 @@
+//region Variables
+$bg_color: #051433;
+$lightBlue: #31a6c1;
+
+$font_01: 'Roboto', sans-serif;
+$font_02: Helvetica, Arial, sans-serif;
+//endregion
+
+body {
+  background-size: cover;
+  min-height: 100vh;
+  background: url('../images/background.jpg') $bg_color center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: $font_01;
+  color: #ffffff;
+}
+
+h1 {font-family: $font_01; font-size: 3.5rem; font-weight: 300; margin-bottom: 30px;}
+h2 {font-family: $font_02; font-size: 1rem; font-weight: 400; margin-bottom: 30px;}
+p {font-size: 0.8rem;}
+
+.globe {
+  background-size: auto 90%;
+  min-height: 100vh;
+  background: url('../images/globe.png') center center no-repeat;
+  -webkit-background-size: auto 90%;
+  -moz-background-size: auto 90%;
+  -o-background-size: auto 90%;
+  padding-bottom: 3rem;
+}
+
+.logo {width: 120px;}
+
+.inline-list {list-style-type: none;
+  li {display: inline-block; padding-left: 10px;}
+}
+
+.countdown { padding-top: 50px; margin-bottom: 30px;
+  ul {list-style-type: none; padding: 0;
+    li {border: solid 1px #ffffff; display: inline-block; text-align: center;font-weight: 300; padding: 10px 15px;}
+    span.digit {font-size: 3rem; line-height: 2.8rem;}
+    span.unit {font-size: 0.7rem; font-family: $font_02;}
+  }
+}
+
+#signup-form {
+  .input-group {width: 60%; margin:0 auto;}
+
+  .form-control {border-radius: 1rem; color: #000000; font-size: 0.8rem;}
+  .form-control:focus {border-color: #ffffff; box-shadow: none;}
+
+  .btn {border-radius: 1rem; font-size: 0.8rem; padding: .375rem 1.75rem;}
+  .btn-outline-secondary {
+    background-color: $lightBlue;
+    color: #ffffff;
+    border-color: $lightBlue;
+  }
+
+  .message {font-size: 0.8rem; margin-bottom: 5px;}
+  .message.success {color: greenyellow;}
+  .message.error {color: firebrick;}
+
+  .btn:focus, .btn-outline-secondary:focus {box-shadow: none;}
+
+  .input-group-append {margin-left: -25px;}
+  .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {border-radius: 1rem;}
+
+  .input-group>.custom-file:focus, .input-group>.custom-select:focus, .input-group>.form-control:focus {z-index: 1;}
+}
+
+@media (max-width: 576px) {
+  .col-xs-3 {width: 25%;}
+  .col-xs-9 {width: 75%;}
+
+  .displaySection {padding: 10px 10px;}
+  .numberDisplay {font-size: 2.5rem;}
+}
+
+
