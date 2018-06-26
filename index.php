@@ -66,7 +66,7 @@
             </h2>
             <p>Sign up now for early token sale privileges!</p>
 
-            <form id="signup-form" method="post">
+            <form id="signup-form" method="post" action="https://global.us18.list-manage.com/subscribe/post?u=e1cce14547abb01d594305d38&amp;id=0e2efb6ba4">
                 <div class="message error"></div>
                 <div class="input-group mb-3">
                     <input id="email" name="email" type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2" required>
@@ -107,25 +107,27 @@
 
             $.ajax({
                 type: "POST",
-                url: "mailer.php",
-                data: "email=" + email,
+                url: "https://global.us18.list-manage.com/subscribe/post?u=e1cce14547abb01d594305d38&amp;id=0e2efb6ba4",
+                data: "EMAIL=" + email,
                 dataType: "json",
                 beforeSend: function() {
                     $('.submit-btn').html('Loading...');
                 },
-                success : function(data){
+                complete : function(){
                     $("#email").val('');
                     $('.submit-btn').html('Sign Up');
-
-                    if (data.status == 'success'){
-                        $('.message').removeClass('success error');
-                        $('.message').addClass('success');
-                        $('.message').html('Thank you for signing up with us');
-                    } else {
-                        $('.message').removeClass('success error');
-                        $('.message').addClass('error');
-                        $('.message').html('Error signing up. Please contact our Customer Service');
-                    }
+                    $('.message').removeClass('success error');
+                    $('.message').addClass('success');
+                    $('.message').html('Thank you for signing up with us');
+                    // if (data.status == 'success'){
+                    //     $('.message').removeClass('success error');
+                    //     $('.message').addClass('success');
+                    //     $('.message').html('Thank you for signing up with us');
+                    // } else {
+                    //     $('.message').removeClass('success error');
+                    //     $('.message').addClass('error');
+                    //     $('.message').html('Error signing up. Please contact our Customer Service');
+                    // }
                 }
             });
             return false;
